@@ -1,0 +1,31 @@
+@import 'compass/css3';
+body {
+  font: 14px/1.5 "Lucida Grande", Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+a {
+  color: #00B7FF;
+}
+.logo {
+	color: #eb412b;
+	font: italic 60px/1.5 'Scada', sans-serif;
+}
+#src-input {
+	width: 320px;
+}
+input {
+	padding: 5px;
+	margin-bottom: 10px;
+}
+input[disabled] {
+	background: #f1f1f1;
+}
+.btn {
+	border: 0 none;
+	padding: 7px 15px;
+	color: #fff;
+	background:#eb412b;
+}
+.btn:hover,.btn.hover {
+	@include box-shadow ( 1px 1px 3px #666);
+}

@@ -1,0 +1,39 @@
+/* line 2, ../sass/style.scss */
+body {
+  font: 14px/1.5 "Lucida Grande", Helvetica, Arial, sans-serif;
+  text-align: center; }
+
+/* line 6, ../sass/style.scss */
+a {
+  color: #00B7FF; }
+
+/* line 9, ../sass/style.scss */
+.logo {
+  color: #eb412b;
+  font: italic 60px/1.5 "Scada", sans-serif; }
+
+/* line 13, ../sass/style.scss */
+#src-input {
+  width: 320px; }
+
+/* line 16, ../sass/style.scss */
+input {
+  padding: 5px;
+  margin-bottom: 10px; }
+
+/* line 20, ../sass/style.scss */
+input[disabled] {
+  background: #f1f1f1; }
+
+/* line 23, ../sass/style.scss */
+.btn {
+  border: 0 none;
+  padding: 7px 15px;
+  color: #fff;
+  background: #eb412b; }
+
+/* line 29, ../sass/style.scss */
+.btn:hover, .btn.hover {
+  -webkit-box-shadow: 1px 1px 3px #666666;
+  -moz-box-shadow: 1px 1px 3px #666666;
+  box-shadow: 1px 1px 3px #666666; }

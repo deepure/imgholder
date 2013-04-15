@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="UTF-8">
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link href='http://fonts.googleapis.com/css?family=Scada:400italic,400' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <h1 class="logo"><%= title %></h1>
+    <div class="page">
+    	<div class="maker">
+        	<input type="text" name="width" id="width" value="400">  x <input type="text" name="height" id="height" value="300">
+        </div>
+        <div class="src">
+    		<input type="text" name="" id="src-input" disabled>
+    		<button class="btn btn-success" id="copySrc">Copy</button>
+    	</div>
+    	<div class="pl-show">
+    		<img src="/400x300" alt="" id="pl-img">
+    	</div>
+    </div>
+    <script src="/jquery/jquery.min.js"></script>
+    <script src="/jquery-zclip/jquery.zclip.js"></script>
+    <script>
+    var getSrc = function () {
+    	var host = window.location.host;
+    	var width = $('#width').val();
+    	var height = $('#height').val();
+    	var src = "http://" + host +"/" + width +"x" + height;
+    	$('#src-input').val(src);
+    	$('#pl-img').attr('src', src);
+    };
+    $(function(){
+    	getSrc();
+    	$('#width').bind('propertychange',getSrc);
+		$('#width').bind('input',getSrc);
+		$('#height').bind('propertychange',getSrc);
+		$('#height').bind('input',getSrc);
+		$('#copySrc').zclip({
+	        path:'/jquery-zclip/ZeroClipboard.swf',
+	        copy: function(){return $('#src-input').val();}
+	    });
+
+    }); 
+    </script>
+  </body>
+</html>

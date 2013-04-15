@@ -1,0 +1,8 @@
+{
+  "name": "jquery-zclip",
+  "version": "1.1.3",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/patricklodder/jquery-zclip.git"
+  }
+}
