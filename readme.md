@@ -3,7 +3,7 @@
 
 ##Installation(安装)  
 需要[gm](http://www.graphicsmagick.org/)模块  
-安装请看这里 [www.graphicsmagick](http://www.graphicsmagick.org/README.html#installation)  
+安装请看这里 [www.graphicsmagick.org](http://www.graphicsmagick.org/README.html#installation)  
 
 ##Usage(使用)  
 http://www.abc.com/(width)x(height)  
