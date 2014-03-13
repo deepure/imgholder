@@ -1,4 +1,4 @@
-#imgholder(图片点位)
+#imgholder(图片占位)
 一个简单的占位图片工具
 
 ##Installation(安装)  
